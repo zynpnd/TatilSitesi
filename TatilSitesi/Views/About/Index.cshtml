@@ -1,0 +1,25 @@
+﻿ @using TatilSitesi.Models.Siniflar
+@model List<Hakkimizda>
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_TestLayout.cshtml";
+    }
+
+    <div class="content">
+        <div class="wrap">
+            <div class="about">
+                <h3 style="font-size:30px;">Hakkımızda</h3>
+                @foreach (var x in Model)
+                {
+                    <img src="@x.FotoUrl" alt="" />
+                <p style="font-size:20px;">@x.Aciklama</p>
+               
+                }
+
+
+
+            </div>
+        </div>
+    </div>
+

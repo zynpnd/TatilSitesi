@@ -1,0 +1,13 @@
+﻿@model TatilSitesi.Models.Siniflar.Iletisim
+
+
+
+    <form method="post">
+        <h2>İLETİŞİM</h2>
+        <input type="hidden" placeholder="ID" name="ID" value="@ViewBag.deger" readonly="readonly" required />
+        <input type="text" name="AdSoyad" class="feedback-input" placeholder="Adı Soyadı"  required autofocus>
+        <input type="Email" name="Mail" class="feedback-input" placeholder="Email Adresi"  required autofocus>
+        <input type="text" name="Konu" class="feedback-input" placeholder="Konu"  required autofocus>
+        <textarea name="Mesaj" placeholder="Mesaj" class="feedback-input" required></textarea>
+        <input type="submit" value="Gönder">
+    </form>

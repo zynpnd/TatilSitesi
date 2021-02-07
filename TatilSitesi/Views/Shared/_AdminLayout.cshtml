@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<title>Admin Paneli</title>
+<link rel="icon" type="image/svg" href="~/web/images/adminicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+                onclick="w3_close()">
+            Close &times;
+        </button>
+        <a href="/Admin/Index/" class="w3-bar-item w3-button"><i class="fas fa-suitcase-rolling"></i>&nbsp;Turlar</a>
+        <a href="/Admin/YorumListesi/" class="w3-bar-item w3-button"><i class="fas fa-comment"></i>&nbsp;Yorumlar</a>
+        <a href="/Admin/iletisimListesi/" class="w3-bar-item w3-button"><i class="fas fa-envelope"></i>&nbsp;İletişim</a>
+        <a href="/Admin/HakkimizdaListesi/" class="w3-bar-item w3-button"><i class="fas fa-question-circle"></i>&nbsp;Hakkımızda</a>
+        <a href="/Default/Index/" class="w3-bar-item w3-button"><i class="fas fa-angle-double-right"></i>&nbsp;Siteye Git</a>
+        <a href="/GirisYap/LogOut/" class="w3-bar-item w3-button"><i class="fas fa-sign-out-alt"></i>&nbsp;Çıkış Yap</a>
+    </div>
+
+    <!-- Page Content -->
+    <div id="main">
+
+        <div class="w3-teal">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1 style="text-align: center;">Admin Yönetim Paneli</h1>
+            </div>
+        </div>
+
+
+
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "15%";
+            document.getElementById("mySidebar").style.width = "15%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>

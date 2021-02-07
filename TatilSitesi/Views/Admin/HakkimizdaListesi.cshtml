@@ -1,0 +1,29 @@
+﻿@using TatilSitesi.Models.Siniflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "HakkimizdaListesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkımızda Listesi</h2>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Foto Url</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+       
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.ID</td>
+    <td>@x.FotoUrl</td>
+    <td><a href="/Admin/HakkimizdaSil/@x.ID" class="btn btn-danger">Sil</a></td> 
+    <td><a href="/Admin/HakkimizdaGetir/@x.ID" class="btn btn-warning">Güncelle</a></td>
+
+</tr>
+    }
+</table>

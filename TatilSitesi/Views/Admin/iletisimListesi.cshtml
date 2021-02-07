@@ -1,0 +1,29 @@
+﻿@using TatilSitesi.Models.Siniflar
+@model List<Iletisim>
+@{
+    ViewBag.Title = "iletisimListesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim Listesi</h2>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Adı Soyadı</th>
+        <th>Mail</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+    <tr>
+        <td>@x.ID</td>
+        <td>@x.AdSoyad</td>
+        <td>@x.Mail</td>
+        <td>@x.Konu</td>
+        <td>@x.Mesaj</td>
+    </tr>
+    }
+</table>
