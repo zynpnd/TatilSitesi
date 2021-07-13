@@ -6,7 +6,7 @@
 ![octocat](./resim.png)
 
 ## Proje İçeriği
-------
+
   -İçerisinde tur bilgileri, iletişim, hakkında gibi özellikleri barındıran bir Tatil & Seyahat web uygulaması geliştirerek topluma hizmet vermek amaçlanmıştır.    
   
   -Tura gitmek isteyen kişilerin ilgilisini çekebilecek tur bilgilerinin olması, gezecek yer bilgileri, yapılan yorumlar bulunmaktadır.  
