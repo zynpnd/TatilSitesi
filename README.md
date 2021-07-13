@@ -1,8 +1,6 @@
 # TatilSitesi
 ### Tatil Sitesi Projesidir.
------
-Bu proje Murat Yücedağ'ın Asp.Net MCV ile Tatil & Seyahat Sitesi  pararle olarak geliştirilmiştir.
-Eğitime  [buradan](https://www.youtube.com/watch?v=vTCP8F2qszA&list=PLKnjBHu2xXNNhJQ6SyF7Wyhqza9mkMGSw) ulaşabilirsiniz.
+
 
 
 ![octocat](./resim.png)
